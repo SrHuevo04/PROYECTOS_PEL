@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/belen/CLionProjects/Grupo1_AC1
+# Install script for directory: C:/Users/RCD dabf/Documents/Ingeniería Informática/2º AÑO/PROYECTOS_PEL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/belen/CLionProjects/Grupo1_AC1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/RCD dabf/Documents/Ingeniería Informática/2º AÑO/PROYECTOS_PEL/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

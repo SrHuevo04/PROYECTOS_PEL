@@ -1,3 +1,3 @@
-C:/Users/belen/CLionProjects/Grupo1_AC1/cmake-build-debug/CMakeFiles/Grupo1_AC1.dir
-C:/Users/belen/CLionProjects/Grupo1_AC1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/belen/CLionProjects/Grupo1_AC1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/RCD dabf/Documents/Ingeniería Informática/2º AÑO/PROYECTOS_PEL/cmake-build-debug/CMakeFiles/Grupo1_AC1.dir
+C:/Users/RCD dabf/Documents/Ingeniería Informática/2º AÑO/PROYECTOS_PEL/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/RCD dabf/Documents/Ingeniería Informática/2º AÑO/PROYECTOS_PEL/cmake-build-debug/CMakeFiles/rebuild_cache.dir
