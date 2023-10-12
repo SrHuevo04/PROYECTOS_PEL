@@ -49,6 +49,27 @@ public:
         Libro::disponible = disponible;
     }
 };
+class Persona{
+private:
+    string nombre;
+    int edad;
+    string dni;
+    Libro libro;
+    vector<Libro> historial;
+public:
+    Persona(string n, int e, string dni){
+        Persona::nombre = n;
+        Persona::edad = e;
+        Persona::dni = dni;
+    }
+    Libro getLibro(){
+        return Persona::libro;
+    }
+    void setLibro(Libro l){
+        Persona::libro=l;
+    }
+
+};
 
 class Persona{
 private:
@@ -80,8 +101,31 @@ public:
     RegistroBiblio(){}
 
     void registrarLibro(Libro libro){
-        if(puntero >)
+        listaLibros[puntero] = libro;
+        puntero++;
     };
+    void registrarPersona(Persona persona){
+        registrados.push_back(persona);
+    }
+    void verLibros(){
+        for (int i = 0; i < puntero; i++) {
+            listaLibros[i].toString();
+        }
+    }
+    bool buscarLibro(Libro l){
+        for(int i = 0;i<20;i++){
+            bool encontrado = false;
+            int sumar = 0;
+            if(listaLibros[sumar] == l){
+                return true;
+                sumar++;
+            }
+        }
+    }
+    void sacarLibro(Persona persona, Libro libro){
+
+    }
+
 };
 
 
