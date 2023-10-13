@@ -13,8 +13,6 @@ class Libro{
 private:
     string autor;
     string titulo;
-    int fechaEntrega;
-    int fechaDevolucion;
     int numero;
     bool disponible;
 
@@ -46,7 +44,10 @@ public:
     bool isDisponible() {
         return disponible;
     }
-
+    /**
+     * Metodo para establecer si el libro esta disponible
+     * @param disponible Si el libro esta disponible o no
+     */
     void setDisponible(bool disponible) {
         Libro::disponible = disponible;
     }
@@ -80,6 +81,29 @@ public:
     void setLibro(Libro l){
         Persona::libro=l;
     }
+    /**
+     * Sobreescribimos el operador == para ver si dos personas son iguales
+     * @param p persona a comparar
+     * @return Si las personas son iguales
+     */
+    bool operator==(const Persona& p)const{
+        return(nombre == p.nombre && edad == p.edad && dni == p.dni);
+    }
+    /**
+     * Metodo que añade un libro al historial de una persona
+     * @param l Libro que se quiere meter en el historial
+     */
+    void addHistorial(Libro l){
+        historial.push_back(l);
+    }
+    /**
+     * Metodo que permite ver los libros del historial
+     */
+    void verLibros(){
+        for (int i = 0; i < historial.size() ; ++i) {
+            historial[i].toString();
+        }
+    };
 };
 class RegistroBiblio{
 private:
@@ -111,10 +135,10 @@ public:
                 puntero--;
             }
         }
+        if(personaEncontrada == false){
+            cout<<"No se ha encontrado esta persona"<<endl;
+        }
     }
 
 };
-
-
-
 #endif //GRUPO1_AC1_CLASES_H
