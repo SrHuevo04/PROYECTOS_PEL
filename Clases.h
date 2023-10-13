@@ -101,20 +101,15 @@ public:
             listaLibros[i].toString();
         }
     }
-    bool buscarLibro(Libro l){
-
-    }
     void sacarLibro(Persona persona, Libro l){
-        bool encontrado = false;
         for(int i = 0;i<20;i++){
-            int sumar = 0;
-            if(listaLibros[sumar] == l){
-                encontrado = true;
-                sumar++;
+            if(listaLibros[i] == l){
+                listaLibros[i] = Libro();
+                for(int j = i;j<puntero;j++){
+                    listaLibros[j] = listaLibros[j+1];
+                }
+                puntero--;
             }
-        }
-        if(encontrado == true){
-
         }
     }
 
